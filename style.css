@@ -1,11 +1,19 @@
+.heading {
+	display: flex;
+	justify-content: center;
+	background-color: bisque;
+	border: 2px solid blueviolet;
+	border-radius: 50px;
+}
+
 .whole-page {
 	display: flex;
 	justify-content: center;
-	margin: auto;
+	/* margin: auto; */
 	background-color: bisque;
-	border: 15px solid blueviolet;
-	border-radius: 2px;
-	padding: 5em;
+	border: 5px solid blueviolet;
+	border-radius: 50px;
+	/* padding: 5em; */
 }
 .whole-page h1 {
 	text-align: center;
@@ -21,6 +29,11 @@
 .icons img {
 	padding: 50px;
 	color: aquamarine;
+}
+
+.icons img:hover {
+	opacity: 0.5;
+	cursor: pointer;
 }
 
 .images {
