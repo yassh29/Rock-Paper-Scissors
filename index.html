@@ -8,26 +8,43 @@
 		<title>Rock Paper Scissors</title>
 	</head>
 	<body>
+		<script src="gameTemp.js"></script>
 		<div class="whole-page">
-			<div>
-				<h1>Rock Paper Scissors</h1>
-				<div class="images">
-					<img
-						src="https://media.sketchfab.com/models/657575194b58424d8d8bafe7374aa42d/thumbnails/cb0747c3185c4723a1bbb745644633f5/98e430d4136f4f4f825354e8cc965654.jpeg"
-						alt=""
-						height="250px"
-						width="350px"
-					/>
-					<img
-						src="https://miro.medium.com/max/1000/1*FEcr9_owB5KplrClDpRenA.png"
-						alt=""
-						height="250px"
-						width="350px"
-					/>
-				</div>
+			<div class="icons">
+				<img
+					id="rock"
+					src="/images/rock.png"
+					alt=""
+					height="300px"
+					width="300px"
+					onclick="getWinner(this.id)"
+				/>
+				<img
+					id="paper"
+					src="/images/paper.png"
+					alt=""
+					height="300px"
+					width="300px"
+					onclick="getWinner(this.id)"
+				/>
+				<img
+					id="scissors"
+					src="/images/scissors.png"
+					alt=""
+					height="300px"
+					width="300px"
+					onclick="getWinner(this.id)"
+				/>
 			</div>
-
-			<script src="game.js"></script>
+		</div>
+		<div class="res">
+			<h3 id="player"></h3>
+			<h3 id="computer"></h3>
+		</div>
+		<div class="winner">
+			<h4 id="playcnt" style="padding-right: 11em"></h4>
+			<h3 id="winner"></h3>
+			<h4 id="compcnt" style="padding-left: 10em"></h4>
 		</div>
 	</body>
 </html>
